@@ -1,0 +1,19 @@
+Bestimmen Sie in Java einen regulären Ausdruck, der alle IP-Adressen der
+HTWG-Konstanz beschreibt.
+
+* Recherchieren Sie, welche Spezifika die IP-Adressen (wir nehmen hier noch ipv4) der HTWG kennzeichnen.
+* Stellen Sie sicher, dass neben diesen Spezifika, auch das grundsätzliche IP-Format eingehalten wird:
+** 4 Ziffernblöcken, die aufeinander folgen.
+** jeder Ziffernblock aus 1, 2 oder 3 Zahlen besteht.
+** die Ziffernblöcke ein Punkt („.“) voneinander trennt.
+
+IP HTWG Konstanz 141.37.20.[0-255]
+
+[source]
+----
+141\.37\.20\.
+(
+(1\d{2}|2[0-4]\d|25[0-5])|
+(\d{1,2})
+)
+----

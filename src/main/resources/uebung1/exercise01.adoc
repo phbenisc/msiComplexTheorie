@@ -1,0 +1,14 @@
+Die formale Sprache latexmath:[L_1] spezifiziere alle „Konstanzer Postleitzahlen“.
+
+=== a. Spezifizieren Sie ein Alphabet latexmath:[\Sigma_1] für die Sprache latexmath:[L_1].
+
+latexmath:[\Sigma_1 = \{2,4,5,6,7,8 \}]
+
+=== b. Geben Sie drei Wörter an, die Teil der Sprache latexmath:[L_1] sind.
+
+latexmath:[78462, 78464, 78465, 78467]
+
+
+=== c. Geben Sie drei Wörter an, die nicht Teil der Sprache latexmath:[L_1] sind.
+
+latexmath:[55555, 55554, 55552]

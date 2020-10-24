@@ -1,0 +1,37 @@
+Spezifizieren Sie einen regulären Ausdruck für jede der folgenden Mengen über
+dem Alphabet latexmath:[\Sigma_0 = {0,1}]. Verwenden Sie ausschließlich die vier
+Grundoperatoren Vereinigung, Konkatenation, Abschlusseigenschaft und
+Klammern.
+
+== a. Jedes Wort außer 11 und 000.
+
+[source]
+----
+[01]{4,}|
+(001|010|011|100|101|110|111)|
+(00|01|10)|
+(0|1)
+----
+
+== b. Enthält mindestens zwei 0en und höchstens eine 1.
+
+[source]
+----
+(10{2,})|
+(0+10+)|
+(0{2,}1)
+----
+
+== c. Enthält keine aufeinander folgenden 0en.
+
+[source]
+----
+(1?(01)*0?)|(0)
+----
+
+== d. Jedes ungerade Zeichen ist eine 1.
+
+[source]
+----
+(1)|((1[01]])*)
+----

@@ -1,0 +1,6 @@
+Schreiben Sie in Java eine Klasse „Validiere“, die für beliebige über die Standard-Eingabe eingelesene Telefonnummern prüft, ob es sich um eine Konstanzer Telefonnummer handelt. Geben Sie über die Standard-Ausgabe entsprechend „Konstanzer Telefonnummer“ oder „keine Konstanzer Telefonnummer“ aus.
+
+[source,java]
+----
+include::../../java/de/htwg_konstanz/in/msi/theo/compl/uebung2/exercise04/Validator.java[lines=3..12]
+----

@@ -1,0 +1,19 @@
+Gegeben seien die folgenden Sprachen latexmath:[L_3] und latexmath:[L_4]. Geben Sie den beiden formalen Sprachen latexmath:[L_3] und latexmath:[L_4] einen treffenden informellen Namen.
+
+
+|===
+|Sprache |Element der Sprache |Nicht Element der Sprache
+
+|latexmath:[L_3]
+|A, BBAAA, BBBBAA
+|AB, AABB, AAABABBB
+
+|latexmath:[L_4]
+|2, 100, 875674
+|1, 007, 987654321
+
+|===
+
+latexmath:[L_3] = Endet mit latexmath:[A]
+
+latexmath:[L_4] = Gerade Zahlen

@@ -1,0 +1,27 @@
+Die formale Sprache latexmath:[L_1] spezifiziere alle „Konstanzer Telefonnummern inkl. Ländervorwahl“.
+
+=== a. Geben Sie ein Alphabet latexmath:[\Sigma_1] für die Sprache latexmath:[L_1]an.
+
+latexmath:[\Sigma_1 = \{ + , 0,1,2,3,4,5,6,7,8,9 \}]
+
+=== b. Geben Sie drei Wörter an, die Teil der Sprache latexmath:[L_1] sind.
+
++49 7531 2060
++49 7531 2061
++49 7531 2062
+
+=== c. Geben Sie drei Wörter an, die nicht Teil der Sprache latexmath:[L_1] sind.
+
++40 7531 2062
++41 7531 2062
++42 7531 2062
+
+=== d. Bestimmen Sie den regulären Ausdruck an, der die Sprache latexmath:[L_1] formal spezifiziert.
+
+
+Annahme: kleinste lokale Telefonnummer ist 3 stellig.
+
+[source]
+----
+\+497531\d{3,}
+----

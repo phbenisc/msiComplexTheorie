@@ -1,0 +1,16 @@
+= Beispielaufgaben LE3
+:stem:
+
+== AUFGABE 1
+include::uebung3/exercise01.adoc[]
+
+== AUFGABE 2
+include::uebung3/exercise02.adoc[]
+
+== AUFGABE 3
+include::uebung3/exercise03.adoc[]
+
+== AUFGABE 4
+include::uebung3/exercise04.adoc[]
+
+

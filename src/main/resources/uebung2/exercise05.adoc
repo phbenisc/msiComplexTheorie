@@ -1,0 +1,36 @@
+Geben Sie einen regulären Ausdruck für die folgenden, informellen Beschreibungen der Sprachen latexmath:[L_2], latexmath:[L_3], latexmath:[L_4] und latexmath:[L_5] über das Alphabet latexmath:[\Sigma_2 = {0,1}] an.
+
+=== a. Enthält mindestens zwei aufeinander folgende Nullen.
+latexmath:[L_2]:
+
+[source]
+----
+([01]*00[01]*)
+----
+
+
+=== b. Endet mit Eins.
+
+latexmath:[L_3]:
+
+[source]
+----
+([01]*1)
+----
+=== c. Startet und endet mit Null.
+
+
+latexmath:[L_4]:
+
+[source]
+----
+(0[01]*0)
+----
+=== d. Enthält das Wort 1111.
+
+latexmath:[L_5]:
+
+[source]
+----
+([01]*1111[01]*)
+----

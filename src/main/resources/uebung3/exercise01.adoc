@@ -1,0 +1,9 @@
+Gegeben sei ein Automat, der alle binären Wörter über dem Alphabet latexmath:[\Sigma_0 = \{a, b\}] akzeptiert, die auf „ab“ enden.
+
+=== a. Zeichnen Sie einen DFA mit vier Zuständen. Für die Endungen aa, ab, ba und bb soll jeweils ein separater Zustand angenommen werden.
+
+plantuml::uebung3/exercise01a.puml["exercise01a.puml",svg]
+
+=== b. Zeichnen Sie einen DFA mit der gleichen Aufgabe, aber nur drei Zuständen.
+
+plantuml::uebung3/exercise01b.puml["exercise01b.puml",svg]

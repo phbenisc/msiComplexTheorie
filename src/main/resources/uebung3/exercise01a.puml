@@ -1,0 +1,31 @@
+@startuml
+'scale 350 width
+[*] --> AA
+
+state "aa" as AA
+state "ab" as AB
+state "ba" as BA
+state "bb" as BB
+
+AA : 0
+AB : 1
+BA : 2
+BB : 3
+
+AA --> AA : a
+AA --> AB : b
+AA --> [*] : nein
+
+AB --> BA : a
+AB --> BB : b
+AB --> [*] : ja
+
+BA --> AA : a
+BA --> AB : b
+BA --> [*] : nein
+
+BB --> BA : a
+BB --> BB : b
+BB --> [*] : nein
+
+@enduml

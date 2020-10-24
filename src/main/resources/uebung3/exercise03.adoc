@@ -1,0 +1,1 @@
+Zeichnen Sie einen DFA, der alle Wörter über dem Alphabet latexmath:[\Sigma = \{a, b, c\}] mit mindestens einem a, einem b und einem c akzeptiert.

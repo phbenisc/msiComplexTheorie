@@ -1,0 +1,11 @@
+Gegeben sei der folgende DFA
+
+
+plantuml::uebung3/exercise02.puml["exercise02.puml",svg]
+
+
+=== a. Geben Sie die Zustands- und Finalmenge an.
+=== b. Geben Sie die Zustandsübergangsfunktion in tabellarischer Form an. Nutzen Sie hierfür die Schreibweise aus der Vorlesung.
+=== c. Welche Sprache akzeptiert dieser DFA? Geben Sie eine möglichst treffende, informelle Beschreibung an.
+=== d. Formulieren Sie den zugehörigen regulären Ausdruck.
+=== e. Überprüfen Sie Ihre Ergebnisse mit dem Programm DFA.java aus der Vorlesung.

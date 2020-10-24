@@ -1,0 +1,24 @@
+Die formale Sprache latexmath:[L_2] spezifiziere alle „binären Wörter mit der Mindestlänge vier“.
+
+=== a. Spezifizieren Sie ein Alphabet latexmath:[\Sigma_2] für die Sprache latexmath:[L_2].
+
+latexmath:[\Sigma_2 = {0,1}]
+
+=== b. Geben Sie drei Wörter an, die Teil der Sprache latexmath:[L_2] sind.
+
+latexmath:[0000,0101, 1111 \in L_2]
+
+=== c. Geben Sie drei Wörter an, die nicht Teil der Sprache latexmath:[L_2] sind.
+
+latexmath:[0,1, 11 \ni L_2]
+
+=== d. Ist es möglich alle Elemente der Menge latexmath:[L_2] aufzulisten? Begründen Sie.
+
+Es ist nicht möglich alle Wörter aufzulisten. Die Sprache hat eine Mindestlänge spezifiziert, allerdings keine Höchstlänge. man kann immer ein neues Element erzeugen, indem man ein Symbol aus latexmath:[\Sigma_2] an ein gültiges Wort anhängt.
+
+=== e. Ist es möglich ein vergleichbares Programm wie unter Aufgabe 2 zu schreiben? Begründen Sie.
+
+[source,java]
+----
+include::../../java/de/htwg_konstanz/in/msi/theo/compl/uebung1/exercise03/Validator.java[lines=5..23]
+----

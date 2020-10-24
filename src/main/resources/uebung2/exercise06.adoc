@@ -1,0 +1,19 @@
+Gegeben sei der reguläre Ausdruck
+[source]
+----
+1.*0|1
+----
+der Sprache latexmath:[L_6].
+
+=== a. Geben Sie eine möglichst treffende, informelle Beschreibung von latexmath:[L_6] an.
+latexmath:[L_6]:
+Started mit 1 und wenn das wort nicht 1 ist endet es auf 0.
+
+=== b. Geben Sie drei Wörter an, die Teil der regulären Sprache sind.
+1, 10, 110101010
+
+=== c. Überprüfen Sie Ihre Wahl am Rechner.
+[source,java]
+----
+include::../../../test/java/de/htwg_konstanz/in/msi/theo/compl/uebung2/exercise06/ValidatorTest.java[lines=8..23]
+----
