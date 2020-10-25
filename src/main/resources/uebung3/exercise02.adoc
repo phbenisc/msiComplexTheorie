@@ -5,6 +5,11 @@ plantuml::uebung3/exercise02.puml["exercise02.puml",svg]
 
 
 === a. Geben Sie die Zustands- und Finalmenge an.
+
+latexmath:[\mathbb{Z} = \{ \}]
+
+latexmath:[\mathbb{F} =\{ \}]
+
 === b. Geben Sie die Zustandsübergangsfunktion in tabellarischer Form an. Nutzen Sie hierfür die Schreibweise aus der Vorlesung.
 
 
