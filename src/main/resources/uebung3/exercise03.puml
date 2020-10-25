@@ -8,17 +8,17 @@ skinparam state {
 
 [*] --> 0
 
-state "anfang" as 0 <<NO>>
+state "start" as 0 <<NO>>
 
-state "ein b" as 1 <<NO>>
-state "ein a" as 2 <<NO>>
-state "ein c" as 3 <<NO>>
+state "b" as 1 <<NO>>
+state "a" as 2 <<NO>>
+state "c" as 3 <<NO>>
 
 
-state "ein b, ein c" as 5 <<NO>>
-state "ein a, ein b" as 4 <<NO>>
-state "ein a, ein c" as 6 <<NO>>
-state "ein a, ein b, ein c" as 7 <<YES>>
+state "b + c" as 5 <<NO>>
+state "a + b" as 4 <<NO>>
+state "a + c" as 6 <<NO>>
+state "a + b + c" as 7 <<YES>>
 
 
 0: 0
@@ -53,5 +53,8 @@ state "ein a, ein b, ein c" as 7 <<YES>>
 6 --> 6: c
 6 --> 7: b
 
+7 --> 7: a
+7 --> 7: b
+7 --> 7: c
 
 @enduml
