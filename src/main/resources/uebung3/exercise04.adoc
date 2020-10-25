@@ -1,8 +1,19 @@
 Zeichnen Sie einen DFA, der alle binären Wörter über dem Alphabet latexmath:[\Sigma = \{a, b\}] akzeptiert, bei denen
 
 === a. ein Vielfaches von zwei a’s vorkommt.
+
+plantuml::uebung3/exercise04a.puml["exercise04a.puml",svg]
+
 === b. ein Vielfaches von drei b’s vorkommt.
+
+plantuml::uebung3/exercise04b.puml["exercise04b.puml",svg]
+
 === c. sowohl ein Vielfaches von zwei a’s als auch ein Vielfaches von drei b’s vorkommt.
+
+plantuml::uebung3/exercise04c.puml["exercise04c.puml",svg]
+
 === d. kein „bba“ vorkommt.
+
+plantuml::uebung3/exercise04d.puml["exercise04d.puml",svg]
 
 

@@ -1,0 +1,31 @@
+@startuml
+[*] --> n0
+
+'state "nein" as n0
+'state "nein" as n1
+'state "nein" as n2
+'state "ja" as j0
+'state "ja" as j1
+'
+'n0: 0
+'n1: 1
+'n2: 3
+'j0: 2
+'j1: 4
+'
+'n0 --> n1 : a
+'n0 --> n2 : b
+'
+'n1 --> j0 : a
+'n1 --> j1 : b
+'
+'n2 --> n1 : a
+'n2 --> n2 : b
+'
+'j0 --> j0 : a
+'j0 --> j1 : b
+'
+'j1 --> n1 : a
+'j1 --> n2 : b
+
+@enduml

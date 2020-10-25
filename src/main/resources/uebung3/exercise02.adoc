@@ -6,6 +6,44 @@ plantuml::uebung3/exercise02.puml["exercise02.puml",svg]
 
 === a. Geben Sie die Zustands- und Finalmenge an.
 === b. Geben Sie die Zustandsübergangsfunktion in tabellarischer Form an. Nutzen Sie hierfür die Schreibweise aus der Vorlesung.
+
+
+|===
+| |Akzeptanzzustand |a |b
+
+|0
+|nein
+|Column 3, row 1
+|Column 4, row 1
+
+|1
+|nein
+|Column 3, row 2
+|Column 4, row 2
+
+|2
+|ja
+|Column 3, row 3
+|Column 4, row 3
+
+|3
+|nein
+|Column 3, row 4
+|Column 4, row 4
+
+|4
+|ja
+|Column 3, row 4
+|Column 4, row 4
+|===
+
+
 === c. Welche Sprache akzeptiert dieser DFA? Geben Sie eine möglichst treffende, informelle Beschreibung an.
 === d. Formulieren Sie den zugehörigen regulären Ausdruck.
+
+[source]
+----
+
+----
+
 === e. Überprüfen Sie Ihre Ergebnisse mit dem Programm DFA.java aus der Vorlesung.
