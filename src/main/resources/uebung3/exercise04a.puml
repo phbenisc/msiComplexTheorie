@@ -1,19 +1,22 @@
 @startuml
-[*] --> 0
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
 
-state "start" as 0
+[*] --> 1
 
-state "ein a" as 1
-state "zwei a" as 2
+state "ein a" as 0 <<NO>>
+state "zwei a" as 1 <<YES>>
 
-0 --> 1 : a
+0: 0
+1: 1
+
 0 --> 0 : b
-'1 --> 2 : a
-
-1 --> 2 : a
-2 --> 1 : a
+0 --> 1 : a
+1 --> 0 : a
 1 --> 1 : b
-2 --> 2 : b
 
 
 

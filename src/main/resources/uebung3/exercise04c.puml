@@ -1,37 +1,19 @@
 @startuml
-[*] --> 0
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
 
-state "start" as 0
+[*] --> 2
 
-state "ein b" as 1
-state "zwei b" as 2
-state "drei b" as 3
+state "b" as 0 <<NO>>
+state "bb" as 1 <<NO>>
+state "bbb" as 2 <<YES>>
 
-0 --> 1 : b
-
-1 --> 2 : b
-1 --> 4 : a
-4 --> 1 : a
-
-2 --> 3 : b
-
-3 --> 1 : b
-
-2--> 5 : a
-5 --> 2 : a
-
-3 --> 6 : a
-6 --> 3 : a
-
-state "ein b" as 4
-state "zwei b" as 5
-state "drei b" as 6
-
-0 --> 6 : a
-4 --> 5 : b
-5 --> 6 : b
-6 --> 4 : b
-
+state "ab" as 3 <<NO>>
+state "abb" as 4 <<NO>>
+state "abbb" as 5 <<NO>>
 
 0: 0
 1: 1
@@ -39,7 +21,25 @@ state "drei b" as 6
 3: 3
 4: 4
 5: 5
-6: 6
+
+0 --> 1 : b
+0 --> 3 : a
+
+1 --> 2 : b
+1 --> 4 : a
+
+2 --> 0 : b
+2 --> 5 : a
+
+3 --> 0 : a
+3 --> 4 : b
+
+4 --> 1 : a
+4 --> 5 : b
+
+5 --> 2 : a
+5 --> 3 : b
+
 
 
 @enduml

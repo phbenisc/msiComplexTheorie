@@ -1,11 +1,17 @@
 @startuml
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
 [*] --> s
 
-state s
+state "start" as s <<YES>>
 
-state "b" as 0
-state "bb" as 1
-state "bba" as 2
+state "b" as 0 <<YES>>
+state "bb" as 1 <<YES>>
+state "bba" as 2 <<NO>>
 
 s --> 0 : b
 s --> s : a

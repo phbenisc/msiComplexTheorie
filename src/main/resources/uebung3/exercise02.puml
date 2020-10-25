@@ -1,11 +1,18 @@
 @startuml
+
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
 [*] --> n0
 
-state "nein" as n0
-state "nein" as n1
-state "nein" as n2
-state "ja" as j0
-state "ja" as j1
+state "nein" as n0 <<NO>>
+state "nein" as n1 <<NO>>
+state "nein" as n2 <<NO>>
+state "ja" as j0 <<YES>>
+state "ja" as j1 <<YES>>
 
 n0: 0
 n1: 1

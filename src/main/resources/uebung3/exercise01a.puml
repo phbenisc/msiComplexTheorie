@@ -1,11 +1,18 @@
 @startuml
 'scale 350 width
+
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
 [*] --> AA
 
-state "aa" as AA
-state "ab" as AB
-state "ba" as BA
-state "bb" as BB
+state "aa" as AA <<NO>>
+state "ab" as AB <<YES>>
+state "ba" as BA <<NO>>
+state "bb" as BB <<NO>>
 
 AA : 0
 AB : 1
@@ -14,18 +21,18 @@ BB : 3
 
 AA --> AA : a
 AA --> AB : b
-AA --> [*] : nein
+'AA --> [*] : nein
 
 AB --> BA : a
 AB --> BB : b
-AB --> [*] : ja
+'AB --> [*] : ja
 
 BA --> AA : a
 BA --> AB : b
-BA --> [*] : nein
+'BA --> [*] : nein
 
 BB --> BA : a
 BB --> BB : b
-BB --> [*] : nein
+'BB --> [*] : nein
 
 @enduml

@@ -1,7 +1,14 @@
 @startuml
-state "Endet auf a" as SA
-state "Endet auf b" as SB
-state "Endet auf ab" as SAB
+
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
+state "Endet auf a" as SA <<NO>>
+state "Endet auf b" as SB <<NO>>
+state "Endet auf ab" as SAB <<YES>>
 
 SA: 0
 SB: 1
@@ -11,13 +18,10 @@ SAB: 2
 
 SA --> SA : a
 SA --> SAB : b
-SA --> [*] : nein
 
 SB --> SA : a
 SB --> SB : b
-SB --> [*] : nein
 
 SAB --> SA : a
 SAB --> SB : b
-SAB --> [*] : ja
 @enduml
