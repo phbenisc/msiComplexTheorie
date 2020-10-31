@@ -1,6 +1,6 @@
 Gegeben seien die regulären Ausdrücke 1. und 2. über dem Alphabet latexmath:[\Sigma =\{a,b\}]. Lösen Sie die folgenden Teilaufgaben für 1) und  2) separat.
 
-=== 1.
+=== 1. ab(a|b)*ab
 [source]
 ----
 ab(a|b)*ab
@@ -127,7 +127,7 @@ plantuml::uebung4/exercise011g.puml["exercise011g.puml",svg]
 
 
 
-=== 2.
+=== 2. b*a*baa
 [source]
 ----
 b*a*baa
@@ -154,8 +154,8 @@ Muss mit baa enden, for dem baa können beliebig viele a's kommen. Vor den a's o
 
 ==== c. Erzeugen Sie durch Transformation des regulären Ausdrucks einen NFA.
 
-plantuml::uebung4/exercise012c0.puml["exercise011c0.puml",svg]
-plantuml::uebung4/exercise012c1.puml["exercise011c1.puml",svg]
+plantuml::uebung4/exercise012c0.puml["exercise012c0.puml",svg]
+plantuml::uebung4/exercise012c1.puml["exercise012c1.puml",svg]
 
 ==== d. Zeichnen Sie für das Einlesen des Wortes abaab (für 1.) und das Wort bbaa (für 2.) schrittweise alle möglichen Zustände in den jeweils resultierenden NFA ein.
 
