@@ -1,0 +1,259 @@
+Gegeben seien die regulären Ausdrücke 1. und 2. über dem Alphabet latexmath:[\Sigma =\{a,b\}]. Lösen Sie die folgenden Teilaufgaben für 1) und  2) separat.
+
+=== 1.
+[source]
+----
+ab(a|b)*ab
+----
+
+==== a. Geben Sie jeweils drei Wörter an, die Teil und nicht Teil der Sprache sind, die der jeweilige reguläre Ausdruck spezifiziert.
+
+|===
+|latexmath:[\in L_1] |latexmath:[\notin L_1]
+
+|abab
+|abbb
+
+|abaaaab
+|bab
+
+|abbbabaaaaab
+|bb
+|===
+
+==== b. Geben Sie eine möglichst treffende informelle Beschreibung für den regulären Ausdruck an.
+
+Fängt mit ab an und hört genauso auch wieder auf.
+
+==== c. Erzeugen Sie durch Transformation des regulären Ausdrucks einen NFA.
+
+plantuml::uebung4/exercise011c0.puml["exercise011c0.puml",svg]
+plantuml::uebung4/exercise011c1.puml["exercise011c1.puml",svg]
+plantuml::uebung4/exercise011c2.puml["exercise011c2.puml",svg]
+plantuml::uebung4/exercise011c3.puml["exercise011c3.puml",svg]
+plantuml::uebung4/exercise011c4.puml["exercise011c4.puml",svg]
+
+
+
+==== d. Zeichnen Sie für das Einlesen des Wortes abaab (für 1.) und das Wort bbaa (für 2.) schrittweise alle möglichen Zustände in den jeweils resultierenden NFA ein.
+
+abaab:
+
+plantuml::uebung4/exercise011d0.puml["exercise011d0.puml",svg]
+
+baab:
+
+plantuml::uebung4/exercise011d1.puml["exercise011d1.puml",svg]
+
+aab:
+
+plantuml::uebung4/exercise011d2.puml["exercise011d2.puml",svg]
+
+ab:
+
+plantuml::uebung4/exercise011d3.puml["exercise011d3.puml",svg]
+
+b:
+
+plantuml::uebung4/exercise011d4.puml["exercise011d4.puml",svg]
+
+Final State:
+
+plantuml::uebung4/exercise011d5.puml["exercise011d5.puml",svg]
+
+==== e. Wie viele Zustände hat der dem NFA entsprechende DFA maximal?
+
+latexmath:[2^5 = 32]
+
+==== f. Stellen Sie eine Zustandstabelle zur Konversion auf.
+
+
+|===
+|latexmath:[\epsilon / \Sigma] |Zustand |a |b |erreichbar
+
+|latexmath:[\varnothing]
+|nein
+|latexmath:[\varnothing]
+|latexmath:[\varnothing]
+|latexmath:[\checkmark]
+
+|0
+|nein
+|3
+|latexmath:[\varnothing]
+|latexmath:[\checkmark]
+
+|1
+|ja
+|
+|
+|
+
+|2
+|nein
+|2,4
+|2
+|latexmath:[\checkmark]
+
+|3
+|nein
+|latexmath:[\varnothing]
+|2
+|latexmath:[\checkmark]
+
+|4
+|nein
+|
+|
+|
+
+|2,4
+|nein
+|2,4
+|1,2
+|latexmath:[\checkmark]
+
+
+|1,2
+|ja
+|2,4
+|2
+|latexmath:[\checkmark]
+|===
+
+==== g. Zeichnen Sie den aus der Zustandstabelle resultierenden DFA.
+
+plantuml::uebung4/exercise011g.puml["exercise011g.puml",svg]
+
+
+
+=== 2.
+[source]
+----
+b*a*baa
+----
+
+==== a. Geben Sie jeweils drei Wörter an, die Teil und nicht Teil der Sprache sind, die der jeweilige reguläre Ausdruck spezifiziert.
+
+
+|===
+|latexmath:[\in L_1] |latexmath:[\notin L_1]
+
+|baa
+|abaa
+
+|bbaa
+|babbaa
+
+|babaa
+|Column 2, row 3
+|===
+
+==== b. Geben Sie eine möglichst treffende informelle Beschreibung für den regulären Ausdruck an.
+Muss mit baa enden, for dem baa können beliebig viele a's kommen. Vor den a's oder dem baa dürfen beliebig viele b s kommen.
+
+==== c. Erzeugen Sie durch Transformation des regulären Ausdrucks einen NFA.
+
+plantuml::uebung4/exercise012c0.puml["exercise011c0.puml",svg]
+plantuml::uebung4/exercise012c1.puml["exercise011c1.puml",svg]
+
+==== d. Zeichnen Sie für das Einlesen des Wortes abaab (für 1.) und das Wort bbaa (für 2.) schrittweise alle möglichen Zustände in den jeweils resultierenden NFA ein.
+
+bbaa
+
+plantuml::uebung4/exercise012d0.puml["exercise012d0.puml",svg]
+baa
+
+plantuml::uebung4/exercise012d1.puml["exercise012d1.puml",svg]
+aa
+
+plantuml::uebung4/exercise012d2.puml["exercise012d2.puml",svg]
+a
+
+plantuml::uebung4/exercise012d3.puml["exercise012d3.puml",svg]
+Final State:
+
+plantuml::uebung4/exercise012d4.puml["exercise012d4.puml",svg]
+==== e. Wie viele Zustände hat der dem NFA entsprechende DFA maximal?
+
+latexmath:[2^5 = 32]
+
+==== f. Stellen Sie eine Zustandstabelle zur Konversion auf.
+
+|===
+|latexmath:[\epsilon / \Sigma] |Zustand |a |b |erreichbar
+
+|latexmath:[\varnothing]
+|nein
+|latexmath:[\varnothing]
+|latexmath:[\varnothing]
+|latexmath:[\checkmark]
+
+
+
+|0
+|nein
+|2
+|0
+|
+
+|1
+|ja
+|latexmath:[\varnothing]
+|latexmath:[\varnothing]
+|latexmath:[\checkmark]
+
+|2
+|nein
+|2
+|3
+|latexmath:[\checkmark]
+
+|3
+|nein
+|4
+|latexmath:[\varnothing]
+|latexmath:[\checkmark]
+
+|4
+|nein
+|1
+|latexmath:[\varnothing]
+|latexmath:[\checkmark]
+
+|0,2
+|nein
+|2
+|0,2,3
+| latexmath:[\checkmark]
+
+//|0,3
+//|nein
+//|2,4
+//|0
+//| latexmath:[\checkmark]
+
+|0,2,3
+|nein
+|2,4
+|0,2, 3
+| latexmath:[\checkmark]
+
+
+|1,2
+|nein
+|2
+|3
+| latexmath:[\checkmark]
+
+|2,4
+|nein
+|1,2
+|3
+| latexmath:[\checkmark]
+
+|===
+
+==== g. Zeichnen Sie den aus der Zustandstabelle resultierenden DFA.
+
+plantuml::uebung4/exercise012g.puml["exercise012g.puml",svg]

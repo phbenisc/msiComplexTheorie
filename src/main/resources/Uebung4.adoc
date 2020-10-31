@@ -1,0 +1,11 @@
+= Beispielaufgaben LE4
+:stem:
+
+== AUFGABE 1
+include::uebung4/exercise01.adoc[]
+
+== AUFGABE 2
+include::uebung4/exercise02.adoc[]
+
+== AUFGABE 3
+include::uebung4/exercise03.adoc[]

@@ -1,0 +1,35 @@
+@startuml
+'scale 350 width
+left to right direction
+skinparam monochrome true
+
+skinparam state {
+  BackgroundColor<<A>> Green
+
+  BorderColor Gray
+}
+
+[*] --> n0
+
+'ab
+
+state "nein" as n0
+state "nein" as n1 <<A>>
+state "nein" as n2
+state "nein" as n3 <<A>>
+state "ja" as j0
+
+n0: 0
+j0: 1
+n1: 2
+n2: 3
+n3: 4
+
+n0 --> n2: a
+n2 --> n1: b
+n1 --> n1: a
+n1 --> n1: b
+
+n1 --> n3: a
+n3 --> j0: b
+@enduml

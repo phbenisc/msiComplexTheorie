@@ -85,7 +85,7 @@
 
                         <configuration>
                             <preserveDirectories>true</preserveDirectories>
-                            <backend>html</backend>
+                            <backend>html5</backend>
                             <sourceHighlighter>coderay</sourceHighlighter>
                             <attributes>
                                 <icons>font</icons>

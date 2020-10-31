@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
+[*] --> 0
+
+state "nein" as 0 <<NO>>
+state "nein" as 1 <<NO>>
+state "ja" as 2 <<YES>>
+state "nein" as 3 <<NO>>
+state "ja" as 4 <<YES>>
+
+0 --> 1 : a
+0 --> 3 : b
+
+1 --> 2 : a
+1 --> 4 : b
+
+2 --> 2 : a
+2 --> 4 : b
+
+3 --> 1 : a
+3 --> 3 : b
+
+4 --> 1 : a
+4 --> 3 : b
+
+@enduml

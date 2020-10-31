@@ -1,0 +1,17 @@
+Gegeben sei der folgende DFA
+
+plantuml::uebung4/exercise02.puml["exercise02.puml",svg]
+
+=== a. Formulieren Sie den zugehörigen regulären Ausdruck.
+
+[source]
+----
+[ab]*a[ab]
+----
+
+=== b. Erzeugen Sie aus dem regulären Ausdruck einen NFA.
+
+plantuml::uebung4/exercise02b.puml["exercise02b.puml",svg]
+=== c. Zeichnen Sie schematisch auf welche Ausdrücke oder Automaten Sie ineinander überführt haben.
+
+DFA -> Regex -> NFA

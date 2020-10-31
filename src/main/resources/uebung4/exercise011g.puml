@@ -1,0 +1,39 @@
+@startuml
+'scale 350 width
+left to right direction
+
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
+[*] --> 0
+
+state "n" as n <<NO>>
+state "0" as 0 <<NO>>
+state "2" as 2 <<NO>>
+state "3" as 3 <<NO>>
+state "2,4" as 24 <<NO>>
+state "1,2" as 12 <<YES>>
+
+n --> n : a
+n --> n : b
+
+0 --> 3 : a
+0 --> n : b
+
+3 --> n : a
+3 --> 2 : b
+
+2 --> 24: a
+2 --> 2: b
+
+24 --> 24: a
+24 --> 12: b
+
+12 --> 24: a
+12 --> 2: b
+
+
+@enduml

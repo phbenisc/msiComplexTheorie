@@ -1,0 +1,3 @@
+Zeichnen Sie einen NFA, der kein DFA ist und alle Wörter über dem Alphabet Σ={a,b,c} akzeptiert, die auf „abc“ enden.
+
+plantuml::uebung4/exercise03.puml["exercise03.puml",svg]

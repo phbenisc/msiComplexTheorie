@@ -1,0 +1,20 @@
+@startuml
+'scale 350 width
+left to right direction
+
+skinparam state {
+  BackgroundColor<<YES>> LightGreen
+  BackgroundColor<<NO>> Red
+  BorderColor Gray
+}
+
+[*] --> n0
+
+state "nein" as n0 <<NO>>
+state "ja" as j0 <<YES>>
+
+n0: 0
+j0: 1
+
+n0 --> j0: ab(a|b)*ab
+@enduml
