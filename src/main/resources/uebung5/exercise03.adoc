@@ -1,0 +1,137 @@
+Gegeben sei die Turingmaschine latexmath:[TM_3] mit folgendem Zustandsdiagramm
+
+image::uebung5/Capture.PNG[TM3]
+
+mit dem Eingabealphabet latexmath:[\Sigma_3 = \{ 0 , 1 \}].
+
+Lösen Sie die folgenden Teilaufgaben:
+
+=== a. Geben Sie jeweils drei Eingangswörter an, die von TM3 akzeptiert und abgelehnt werden.
+
+0
+
+000
+
+101
+
+10
+
+01
+
+1110
+
+=== b. Gegeben sei das Eingangswort w=11011011. Geben Sie den zugehörigen Verlauf des Worts bei jedem Zustandswechsel von TM3 in tabellarischer Form an.
+
+[source]
+----
+Input
+\#11011011#
+
+
+Durchlauf
+#**#**1011011# -> Z4
+##1011011**#** -> Z5
+##101101**#**# -> Z1
+#**#**101101## -> Z0
+##**#**01101## -> Z4
+###01101**#**# -> Z5
+###0110**#**## -> Z1
+##**#**0110### -> Z0
+###**#**110### -> Z6
+####110**#**## -> Z7
+####11**#**### -> Z1
+###**#**11#### -> Z0
+####**#**1#### -> Z4
+#####1**#**### -> Z5
+#####**#**#### -> Z1
+####**#**##### -> Z0 -> Endlosschleife
+
+----
+=== c. Geben Sie die Zustandstabelle von TM3 an.
+
+
+|===
+.2+|latexmath:[\delta / \Sigma] .2+|latexmath:[\Gamma] 3+|  3+|
+//|
+//|
+|0|1|#|0|1|#
+
+
+|0
+|R
+|6
+|4
+|0
+|#
+|#
+|#
+
+|1
+|L
+|1
+|1
+|0
+|0
+|1
+|#
+
+|2
+|N
+|2
+|2
+|2
+|0
+|1
+|#
+
+|3
+|Ja
+|3
+|3
+|3
+|0
+|1
+|#
+
+|4
+|R
+|4
+|4
+|5
+|0
+|1
+|#
+
+|5
+|L
+|2
+|1
+|5
+|0
+|#
+|#
+
+|6
+|R
+|6
+|6
+|7
+|0
+|1
+|#
+
+|7
+|L
+|1
+|2
+|3
+|#
+|1
+|#
+|===
+
+
+
+
+=== d. Erstellen Sie eine Textdatei, die die Definition der Zustandstabelle enthält.
+=== e. Testen Sie Ihre Lösung mit dem Programm TuringMaschine.java aus der Vorlesung (LE6).

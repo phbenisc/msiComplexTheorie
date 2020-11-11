@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+
+skinparam state {
+  BackgroundColor White
+  BorderColor Gray
+}
+
+[*] --> 0
+
+state "R" as 0
+state "L" as 1
+
+0:0
+1:1
+
+
+0 --> 1 : #
+1 --> 0 : #
+@enduml

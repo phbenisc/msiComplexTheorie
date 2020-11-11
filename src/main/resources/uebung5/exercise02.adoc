@@ -1,0 +1,80 @@
+Gegeben sei die Turingmaschine TM2 mit
+
+* der Zustandsmenge latexmath:[Q_2 = {0, 1, 2, 3}],
+* dem Eingabealphabet latexmath:[\Sigma_2 = {a, b}],
+* dem Arbeitsalphabet latexmath:[\Gamma_2 = {a, b, \#}],
+* dem Startzustand 0,
+* der Zielmenge latexmath:[F_2 = {3}]
+* sowie der Zustandstabelle latexmath:[\delta_2].
+
+|===
+|latexmath:[\delta / \Sigma, \Gamma] |Typ ||a |b |# || a |b |#
+
+|0
+|R
+||0
+|0
+|1
+||a
+|b
+|#
+
+|1
+|L
+||2
+|1
+|3
+||b
+|a
+|#
+
+|2
+|L
+||2
+|1
+|3
+||b
+|a
+|#
+
+|3
+|ja
+||
+|
+|
+||
+|
+|
+
+|===
+
+=== a) Stellen Sie das zugehörige Zustandsdiagramm dar.
+
+plantuml::uebung5/exercise02a.puml["exercise02a.puml",svg]
+
+=== b) Gegeben sei das Wort w = abbab. Geben Sie den zugehörigen Verlauf des Wortes bei jedem Zustandswechsel von TM2 in tabellarischer Form an.
+
+
+\#**a**bbab#, latexmath:[Z_0]
+
+\#abbab**#**, latexmath:[Z_1]
+
+\#abba**a**#, latexmath:[Z_1]
+
+\#abb**b**a#, latexmath:[Z_2]
+
+\#ab**a**ba#, latexmath:[Z_1]
+
+\#a**a**aba#, latexmath:[Z_1]
+
+\#**b**aaba#, latexmath:[Z_2]
+
+\**#**baaba#, latexmath:[Z_3]
+
+
+=== c) Geben Sie eine informelle Beschreibung der Arbeitsweise von TM2 an.
+
+Vertauscht a und b"s.
+
+== d) Vereinfachen Sie TM2 zu einer gleichartigen Turingmaschine mit minimaler Anzahl von Zuständen.
+plantuml::uebung5/exercise02d.puml["exercise02d.puml",svg]

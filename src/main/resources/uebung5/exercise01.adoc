@@ -1,0 +1,9 @@
+Gegeben sei die Turingmaschine latexmath:[TM_1], die Eingänge aus dem binären Alphabet bearbeiten kann und abwechselnd zum ersten leeren Zeichen ganz rechts und zum ersten leeren Zeichen ganz links auf dem Band springt und dieses jeweils mit dem Zeichen * überschreibt.
+
+=== a. Stellen Sie das zugehörige Zustandsdiagramm dar.
+
+plantuml::uebung5/exercise01a0.puml["exercise01a0.puml",svg]
+
+=== b. Wie lange läuft latexmath:[TM_1] und welche Voraussetzungen gibt es hierfür?
+
+Die T-Maschiene ist in einer Endlosschleife gefangen. Sie würde allerdings irgendwann terminieren oder in einen undefinierten Zustand überspringen, da der Speicher des Bandes ebenso unendlich wächst und damit dies aufgrund der technische oder physischen Limitierungen des ausführenden PCs zu Problemen führt.
