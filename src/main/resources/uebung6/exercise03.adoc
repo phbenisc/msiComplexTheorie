@@ -1,0 +1,11 @@
+Gegeben sei die Funktion f(x)=x+2.
+
+=== a. Entwickeln Sie eine TM, die ihr Band mit x initialisiert und das Wort f(x) auf dem Band hinterlässt.
+
+plantuml::uebung6/exercise03.puml["exercise03.puml",svg]
+
+=== b. Ist die Funktion f(x) berechenbar?
+
+Ja, da sie in einer Turingmaschine abgebildet werden kann.
+
+

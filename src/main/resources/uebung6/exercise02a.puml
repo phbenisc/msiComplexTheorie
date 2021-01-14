@@ -1,0 +1,26 @@
+@startuml
+
+left to right direction
+
+skinparam state {
+  BackgroundColor White
+  BorderColor Gray
+}
+[*] --> S0
+
+state "true" as S0
+state "false" as S1
+state "false" as S2
+
+S0:0
+S1:1
+S2:2
+
+S0 --> S1 : a
+S0 --> S0 : b
+S1 --> S2 : a
+S1 --> S1 : b
+S2 --> S0 : a
+S2 --> S2 : b
+
+@enduml

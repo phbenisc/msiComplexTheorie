@@ -1,0 +1,23 @@
+@startuml
+scale 350 width
+
+left to right direction
+
+skinparam state {
+  BackgroundColor White
+  BorderColor Gray
+}
+[*] --> S0
+
+state "R" as S0
+state "R" as S1
+state "True" as S2
+
+S0:0
+S1:1
+S2:2
+
+S0 --> S1: 0,1
+S1 --> S0: 0,1
+S0 --> S2: #
+@enduml
