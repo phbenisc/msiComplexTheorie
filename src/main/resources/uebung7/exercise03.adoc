@@ -1,0 +1,4 @@
+Schreiben Sie ein Programm, das bestimmt, ob die folgende Java-Methode
+anhält.
+
+image::../uebung7/exercise3code.png[]

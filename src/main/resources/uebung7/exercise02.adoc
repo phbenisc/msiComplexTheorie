@@ -1,0 +1,12 @@
+Sei latexmath:[L_2] eine Sprache über dem binären Alphabet latexmath:[\Sigma = \{0,1\}] mit
+
+• 0, Sie bestehen die Prüfung „Komplexitätstheorie“.
+• 1, Sie bestehen die Prüfung „Komplexitätstheorie“ nicht.
+
+=== a. Ist latexmath:[L_2] entscheidbar? Begründen Sie Ihre Antwort.
+
+Die Sprache ist entscheidbar, da die Antwort nur ja oder nein sein kann.
+
+=== b. Schreiben Sie eine latexmath:[TM_2], die das Problem entscheidet.
+
+

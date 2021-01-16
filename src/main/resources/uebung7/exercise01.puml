@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+
+skinparam state {
+  BackgroundColor White
+  BorderColor Gray
+}
+[*] --> S0
+
+state "R" as S0
+state "L" as S1
+state "L" as S2
+state "L" as S3
+state "ja" as S4
+
+S0:0
+S1:1
+S2:2
+S3:3
+S4:4
+
+S0 --> S1: '#:c
+S1 --> S2: a:c
+S1 --> S3: b:c
+S1 --> S4: '#:c
+S2 --> S3: b:a
+S2 --> S4: '#:a
+S3 --> S2: a:b
+S3 --> S4: '#:b
+@enduml
