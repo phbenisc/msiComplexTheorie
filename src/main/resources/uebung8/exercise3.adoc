@@ -1,0 +1,25 @@
+Schreiben Sie in Java ein Programm, das das 4-Summenproblem
+implementiert. Lesen Sie über die Std.-Eingabe Integerwerte ein. Die
+Ausgabe Ihres Programms soll Ihnen mitteilen, welche Teilmengen der
+Werte summiert 0 ergeben. Falls dies für keine Teilmenge der Fall ist,
+soll Ihr Programm dies entsprechend ausgeben.
+
+=== a. Füllen Sie die folgende Tabelle aus
+
+
+|===
+|n |Laufzeitverhalten in Sekunden
+
+|10
+|
+
+|100
+|
+
+|1000
+|
+
+|10000
+|
+|===
+

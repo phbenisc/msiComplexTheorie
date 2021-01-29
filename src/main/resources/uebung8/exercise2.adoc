@@ -1,0 +1,31 @@
+Gegeben seien die folgenden Eigenschaften von Programmen.
+
+a. Das Programm enthält Anweisungen, die nicht ausgeführt wurden.
+b. Das Programm ist ein Programm, das in einer Programmiersprache geschrieben wurde.
+c. Das Programm hat einen Virus.
+d. Das Programm hat bei der Eingabe der Größe n ein kubisches Laufzeitverhalten.
+e. Der Computer brummt bei der Ausführung.
+f. Jede Variable des Programms wird initialisiert ehe sie verwendet wird.
+g. Zwei Programme geben für alle Eingaben dasselbe Ergebnis aus.
+
+Gegeben Sie jeweils an, ob es sich um funktionale Eigenschaften
+handelt. Wenden Sie den Satz von Rice an und begründen Sie welche
+der Eigenschaften überprüft werden können und welche Überprüfungen
+zur Klasse der unlösbaren Probleme gehören.
+
+[quote,,Satz von Rice 1951]
+Zu bestimmen, ob ein gegebenes Programm irgendeine funktionale Eigenschaft besitzt, ist unlösbar.
+
+[quote,,Definition: Funktionale Eigenschaft]
+____
+1) Eine funktionale Eigenschaft eines Programmes ist definiert als eine Eigenschaft des Eingangs- /Ausgangsverhalten, also die Funktion, die das Programm berechnet.
+
+2) Sie ist nicht trivial, d.h. sie ist die Eigenschaft einiger Programme, aber nicht aller Programme.
+____
+
+a. Funktionale Eigenschaft, nicht testbar
+b. Jedes Program ist in einer Programmiersprache geschrieben -> keine funktionale Eigenschaft
+c. Funktionale Eigenschaft, nicht testbar
+d. keine Funktionale Eigenschaft, testbar (siehe Algo)
+e. keine funktionale Eigenschaft, da laut aussage nicht abh'ngig von der ein oder der Ausgabe
+f. Funktionale Eigenschaft, nicht testbar

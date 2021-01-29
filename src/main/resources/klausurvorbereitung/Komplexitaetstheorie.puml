@@ -1,0 +1,63 @@
+@startmindmap
+'https://plantuml.com/mindmap-diagram
+
+title Themenübersicht Komplexitätstheorie
+
+* Komplexitätstheorie
+** Formale Sprachen
+*** Abstrakte Maschine
+****_ math Modell zu Berechnung
+****_ Regeln zur transformation von Input -> Output
+****_ ist math. Modell zur Berechnung des Wortproblems einer formalen Sprache
+****_ ist eine math. Funktion, die ein Eingangswort auf ein Ausgangsbit abbildet. (true, false)
+*** Formale Sprache
+****_ Menge von Wörtern (mit den Symbolen des spez. Alphabets) + spez. Regeln
+**** Symbol
+*****_ unique Zeichen
+**** Alphabet
+*****_ Endliche Menge an Symbolen
+*****_ Σ={2,4,5,6,7,8}
+**** Wort
+*****_ Sequenz von Symbolen
+*****_ Wörter in Sprache: ab, bb ∈ L
+*****_ Wörter nicht in Sprache: ab, bb ∋ L
+** Regex
+*** Operationen
+****_ R|S Vereinigung von R und S, true, wenn in mind. einer von beiden Mengen
+****_ RS Konkatenation es ergibt sich ein zusammengesetztes Wort
+****_ Endlicher Abschluss R* wiederholt R 0-n
+****_ Klammerung (R) hauptsächlich zur Gruppierung
+** DFA
+***_ Deterministic finite automaton
+*** Zustände
+****_ Akzeptanzzustand
+****_ Ablehnungszustand
+****_ Zustandsmenge (alle Zustände) hat als Zeichen Q udn wird mit Index angegeben Q = {0,1 ...}
+****_ Finalmenge sind alle Akzeptanzzustände der Zustandsmenge F = {0,2}
+*** Transitionen
+****_ Spez. Zustandswechsel
+****_ Tabelle für Zustandsübergangfunktion: \n δ über Σ (Index) | Zustand | a | b (a und b sind exemplarisch für Alphabet)
+
+*** Leseeinheit
+****_ Initial immer auf erstem Symbol (Kopf läuft nur nach rechts)
+
+** NFA
+** Turing-Maschiene
+** Berechenbarkeit
+** Unlösbarkeit
+** Nicht effizient lösbare Prob.
+** p versus np
+** np vollständig
+** Klassifikation
+
+
+
+
+
+center footer Philip Benischke (287519)
+
+legend left
+  Short
+  legend
+endlegend
+@endmindmap

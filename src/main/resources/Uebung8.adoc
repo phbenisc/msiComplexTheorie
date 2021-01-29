@@ -1,0 +1,11 @@
+= Beispielaufgaben LE8
+:stem:
+
+== AUFGABE 1
+include::uebung8/exercise1.adoc[]
+
+== AUFGABE 2
+include::uebung8/exercise2.adoc[]
+
+== AUFGABE 3
+include::uebung8/exercise3.adoc[]
