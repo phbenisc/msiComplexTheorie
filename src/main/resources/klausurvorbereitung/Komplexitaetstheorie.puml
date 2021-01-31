@@ -1,9 +1,12 @@
 @startmindmap
 'https://plantuml.com/mindmap-diagram
+skinparam monochrome true
+
 
 title Themenübersicht Komplexitätstheorie
 
 * Komplexitätstheorie
+
 ** Formale Sprachen
 *** Abstrakte Maschine
 ****_ math Modell zu Berechnung
@@ -17,31 +20,68 @@ title Themenübersicht Komplexitätstheorie
 **** Alphabet
 *****_ Endliche Menge an Symbolen
 *****_ Σ={2,4,5,6,7,8}
-**** Wort
+**** Wort (W)
 *****_ Sequenz von Symbolen
 *****_ Wörter in Sprache: ab, bb ∈ L
 *****_ Wörter nicht in Sprache: ab, bb ∋ L
+
 ** Regex
 *** Operationen
 ****_ R|S Vereinigung von R und S, true, wenn in mind. einer von beiden Mengen
 ****_ RS Konkatenation es ergibt sich ein zusammengesetztes Wort
 ****_ Endlicher Abschluss R* wiederholt R 0-n
 ****_ Klammerung (R) hauptsächlich zur Gruppierung
-** DFA
+
+** DFA (Q, Σ, δ, q0, F)
 ***_ Deterministic finite automaton
+***_ jeder DFA ist auch ein NFA
 *** Zustände
 ****_ Akzeptanzzustand
 ****_ Ablehnungszustand
-****_ Zustandsmenge (alle Zustände) hat als Zeichen Q udn wird mit Index angegeben Q = {0,1 ...}
+****_ Zustandsmenge (alle Zustände) hat als Zeichen Q und wird mit Index angegeben Q = {0,1 ...}
 ****_ Finalmenge sind alle Akzeptanzzustände der Zustandsmenge F = {0,2}
+****_ Startzustand q0 oder 0
 *** Transitionen
 ****_ Spez. Zustandswechsel
+****_ nur eine Transition pro Symbol erlaubt
+****_ Zustandsübergangfunktion δ
 ****_ Tabelle für Zustandsübergangfunktion: \n δ über Σ (Index) | Zustand | a | b (a und b sind exemplarisch für Alphabet)
-
 *** Leseeinheit
 ****_ Initial immer auf erstem Symbol (Kopf läuft nur nach rechts)
 
-** NFA
+** NFA (Q, Σ, δ, q0, F)
+***_ Nondeterministic finite automaton
+*** Vorteile
+****_ kompakter
+****_ oft einfacher
+****_ Grundlage für Regex
+*** Zustände
+****_ wie DFA
+**** kann mehr als 1 Zustand gleichzeitig haben
+*****_ Maschiene akzeptiert ein Wort, \n wenn mind. ein Akzeptanzzustand erreicht worden ist
+*****_ mehrere Startzustände sind erlaubt (q0)
+*** Transition
+****_ mehr als eine Transition pro Symbol
+****_ nicht beschriftete Transition (Zustand wird autm. mit Vorgänger getriggert)
+****_ Symbole müssen nicht als Transition vorhanden sein (Zustand verfällt)
+
+** Kleene’s Theorem
+***_ Reguläre Ausdrücke, DFAs und NFAs sind äquivalente Modelle, in dem Sinn, dass sie alle reguläre Sprachen charakterisieren.
+*** NFA zu DFA
+**** 1. Zustandstabelle
+*****_ <img:nfaToDfa.png> \n ∅ wenn kein Zustand gültig ist (verbleibt auch auf ∅)
+*****_ fange bei Startzustand an und füg nur Zustandkombinationen hinzu, wenn diese erreicht werden
+**** 2. DFA
+*****_ jede Zustandskombination ist ein Knoten
+*****_ alle übergänge sind durch Tabelle definiert.
+*****_ Leere Menge ∅ nicht vergessen, wenn erreichbar!
+*** NFA zu Regex
+****_ Verkettung
+*****_ <img:regexToNfaVereinigung.png {scale=0.5}>
+****_ Schleifen
+*****_ <img:regexToNfaLoops.png {scale=0.5}>
+*** Regex zu NFA
+****_ selbes nur umgekehrt
 ** Turing-Maschiene
 ** Berechenbarkeit
 ** Unlösbarkeit
