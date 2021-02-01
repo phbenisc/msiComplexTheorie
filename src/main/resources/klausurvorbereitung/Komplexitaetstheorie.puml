@@ -69,7 +69,7 @@ title Themenübersicht Komplexitätstheorie
 ***_ Reguläre Ausdrücke, DFAs und NFAs sind äquivalente Modelle, in dem Sinn, dass sie alle reguläre Sprachen charakterisieren.
 *** NFA zu DFA
 **** 1. Zustandstabelle
-*****_ <img:nfaToDfa.png> \n ∅ wenn kein Zustand gültig ist (verbleibt auch auf ∅)
+*****_ <img:nfaToDfa.png {scale=0.75}> \n ∅ wenn kein Zustand gültig ist (verbleibt auch auf ∅)
 *****_ fange bei Startzustand an und füg nur Zustandkombinationen hinzu, wenn diese erreicht werden
 **** 2. DFA
 *****_ jede Zustandskombination ist ein Knoten
@@ -82,7 +82,42 @@ title Themenübersicht Komplexitätstheorie
 *****_ <img:regexToNfaLoops.png {scale=0.5}>
 *** Regex zu NFA
 ****_ selbes nur umgekehrt
+
 ** Turing-Maschiene
+*** Zustände
+**** Richtungszustände (definiert Leserichtung)
+*****_ Linkszustand
+*****_ Rechtszustand
+**** Endzustände
+*****_ Haltezustand (Maschine wird gestoppt)
+*****_ Akzeptanzzustand (Maschine wird gestoppt)
+*****_ Ablehnungszustand (Maschine wird gestoppt)
+*** Transitionen
+****_ Input und Output, meist durch : getrennt (Input:Output), wenn nur ein Symbol dort ist, dann ist IO das selbe
+****_ Schleifen sind implizit
+*** Leseeinheit
+****_ Position initial zumeist links, sollte aber durch Annahme definiert werden, oder durch eine Status expliziert forciert werden
+****_ Kann auch schreiben
+*** Band
+****_ Theoretisch unendlich
+****_ Das Symbol # für nicht belegte Felder
+*** Zugangsübergangfunktion
+****_ <img:turingStateTable.png {scale=0.5}>
+*** Bekannte Turing-Maschienen
+****_ Binärer Dekrementierer
+*****_ <img:turingBinaerDecrement.png {scale=0.25}>
+****_ Binärer Addierer
+*****_ <img:turingBinaerDecrement.png {scale=0.25}>
+****_ Binärer Zähler (ja, wenn a und b gleich?)
+*****_ <img:turingBinaerCounter.png {scale=0.25}>
+*** Definitionen
+****_ Algorithmus
+*****_ Ein Algorithmus beschreibt eine endliche, deterministische und effiziente Methode zur Problemlösung.\n Diese Methode kann durch ein Computerprogramm implementiert werden kann.
+****_ Erkennen
+*****_ Eine TM erkennt eine Sprache, wenn sie für alle Wörter der Sprache in einem Aktzeptanzzustand endet.
+****_ Entscheiden
+*****_ Hält an und erkennt das Wörter nicht Teil der Sprache sind.
+**** Berechenbarkeit
 ** Berechenbarkeit
 ** Unlösbarkeit
 ** Nicht effizient lösbare Prob.
